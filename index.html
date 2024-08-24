@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./modal.css" >
+</head>
+<body>
+
+    <button onclick="loadModal('modal')">
+        Open modal
+    </button>
+
+    <button onclick="loadModal('error-modal')">
+        Open error modal
+    </button>
+
+    <div class="modal-container hide" id="modal">
+        <div class="modal w50-p">
+            <div class="modal-header">
+                <span onclick="closeModal('modal')" class="modal-close-button">X</span>
+            </div>
+            <div class="modal-body">
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae quod quam animi dolores, fugiat nemo delectus illum quidem deserunt quo ullam mollitia, minima incidunt magnam eum, perferendis non. Consectetur, iure.
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae quod quam animi dolores, fugiat nemo delectus illum quidem deserunt quo ullam mollitia, minima incidunt magnam eum, perferendis non. Consectetur, iure.
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae quod quam animi dolores, fugiat nemo delectus illum quidem deserunt quo ullam mollitia, minima incidunt magnam eum, perferendis non. Consectetur, iure.
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae quod quam animi dolores, fugiat nemo delectus illum quidem deserunt quo ullam mollitia, minima incidunt magnam eum, perferendis non. Consectetur, iure.
+                </p>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="modal-container hide" id="error-modal">
+        <div class="modal w50-p">
+            <div class="modal-header">
+                <span onclick="closeModal('error-modal')" class="modal-close-button">X</span>
+            </div>
+            <div class="modal-body">
+                <p style="background-color: #ff8d8db0; border: 5px solid red; padding: 10px;">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae quod quam animi dolores, fugiat nemo delectus illum quidem deserunt quo ullam mollitia, minima incidunt magnam eum, perferendis non. Consectetur, iure.
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae quod quam animi dolores, fugiat nemo delectus illum quidem deserunt quo ullam mollitia, minima incidunt magnam eum, perferendis non. Consectetur, iure.
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae quod quam animi dolores, fugiat nemo delectus illum quidem deserunt quo ullam mollitia, minima incidunt magnam eum, perferendis non. Consectetur, iure.
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae quod quam animi dolores, fugiat nemo delectus illum quidem deserunt quo ullam mollitia, minima incidunt magnam eum, perferendis non. Consectetur, iure.
+                </p>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="./modal.js"></script>
+</body>
+</html>
